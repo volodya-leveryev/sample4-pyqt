@@ -1,6 +1,6 @@
 # Пример приложения с GUI на базе PyQt
 
-Системные требования: создать виртуальное окружение на базе Python 3.5 - 3.9.
+**Системные требования:** создать виртуальное окружение на базе Python 3.5 - 3.9.
 
 1. Установить пакеты:
 
@@ -13,3 +13,8 @@
 3. Откомпилировать *.ui в *.py можно с помощью:
 
 `venv\scripts\pyuic5.exe main.ui -o main_ui.py`
+
+**Ссылки:**
+
+* https://realpython.com/learning-paths/pyqt-gui-programming/
+* https://realpython.com/qt-designer-python/
