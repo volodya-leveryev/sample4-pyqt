@@ -8,15 +8,15 @@ from main_ui import Ui_MainWindow
 
 
 class Window(QMainWindow, Ui_MainWindow):
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, parent=None):
+        super().__init__(parent)
         self.setupUi(self)
         self.connectSignalsSlots()
 
     def connectSignalsSlots(self):
-        self.pushButton.clicked.connect(self.showAbout)
+        self.pushButton.clicked.connect(self.show_about)
 
-    def showAbout(self):
+    def show_about(self):
         QMessageBox.about(
             self,
             "About Sample Editor",
